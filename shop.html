@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========== NEW SEO META TAGS ========== -->
+  <meta name="description" content="Shop premium gaming gear at GearUp Tech - Wireless keyboards, headsets, mobile coolers & accessories. Best prices for pro gamers with verified reviews.">
+  <meta name="keywords" content="gaming gear, gaming accessories, wireless gaming keyboard, gaming headset, mobile cooler, gaming equipment">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourwebsite.com/shop">
+  <meta property="og:title" content="GearUp Tech - Premium Gaming Gear Shop">
+  <meta property="og:description" content="Discover top-rated gaming keyboards, headsets, coolers & accessories. Enhance your gaming setup with pro gear at competitive prices.">
+  <meta property="og:image" content="https://www.yourwebsite.com/image/products/gaming-gear-collection.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GearUp Tech - Shop Gaming Gear">
+  <meta name="twitter:description" content="Premium gaming accessories for serious players. Keyboards, headsets, coolers & more with verified reviews.">
+  <meta name="twitter:image" content="https://www.yourwebsite.com/image/products/gaming-gear-collection.jpg">
+  
+  <!-- Preconnect for External Resources -->
+  <link rel="preconnect" href="https://www.amazon.in">
+  <!-- ========== END OF NEW ADDITIONS ========== -->
+
+  <!-- Your Existing Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GearUp Tech - Shop Gaming Gear</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+    }
+
+    header a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .filter {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #1a1a1a;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      border-radius: 5px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-name {
+      font-size: 20px;
+      color: #00ffcc;
+      margin: 10px 0;
+    }
+
+    .rating {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .review {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #00ffcc;
+      color: #0d0d0d;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #009999;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .btn-group {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html">← Back to Home</a>
+    <h2>GearUp Tech</h2>
+  </header>
+
+  <div class="container">
+
+    <!-- Title -->
+    <div class="title">
+      <h1>Shop Pro Gaming Gear</h1>
+      <p>Handpicked Accessories for Every Gamer</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter">
+      <label for="price-filter">Sort by Price:</label>
+      <select id="price-filter">
+        <option value="low-high">Low to High</option>
+        <option value="high-low">High to Low</option>
+      </select>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid" id="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card" data-price="120">
+        <img src="image/products/ZEBRONICS Transformer PRO Gaming Wireless Keyboard.jpg" 
+             alt="ZEBRONICS Transformer PRO Gaming Wireless Keyboard with RGB lighting" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">ZEBRONICS Transformer PRO Gaming Wireless Keyboard</div>
+        <div class="rating">★★★★☆ (4.2)</div>
+        <div class="review">Excellent lighting, smooth typing experience.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/Zebronics_TP-keyboardandmouse.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card" data-price="250">
+        <img src="image/products/headphone.jpg" 
+             alt="Wireless gaming headset with microphone and LED accents" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">Wireless Gaming Headset</div>
+        <div class="rating">★★★★☆ (3.8)</div>
+        <div class="review">Clear sound, great battery life.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/gaming-headphone.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card" data-price="350">
+        <img src="image/products/Cosmic Byte GS430 Gaming wired over ear Headphone.jpg" 
+             alt="Cosmic Byte GS430 Gaming wired over ear Headphone with microphone" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">Cosmic Byte GS430 Gaming wired over ear Headphone</div>
+        <div class="rating">★★★★☆ (4.2)</div>
+        <div class="review">Powerful sound, deep bass, and comfy for long gaming sessions.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/cosmicByte_GS430-headphone.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card" data-price="90">
+        <img src="image/products/Boult Audio X1 Pro Wired Earphones.jpg" 
+             alt="Boult Audio X1 Pro Wired Earphones with in-line microphone" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">Boult Audio X1 Pro Wired Earphones</div>
+        <div class="rating">★★★★☆ (3.9)</div>
+        <div class="review">Great sound, strong bass, and zero lag for gaming</div>
+        <div class="btn-group">
+          <a href="Product/accessories/Boult-Audio_X1_Pro.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card" data-price="150">
+        <img src="image/products/Vero Forza Arctic Pro V3 Mobile Cooler.jpg" 
+             alt="Vero Forza Arctic Pro V3 Mobile Cooler with RGB lighting" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">Vero Forza Arctic Pro V3 Mobile Cooler</div>
+        <div class="rating">★★★☆☆ (3.2)</div>
+        <div class="review">Ergonomic design, responsive triggers.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/vero_V3_cooler.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card" data-price="300">
+        <img src="image/products/laptop-cooler.jpg" 
+             alt="Laptop cooling pad with multiple fans" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">Laptop Cooler</div>
+        <div class="rating">★★★★☆ (3.9)</div>
+        <div class="review">Keeps your device cool under heavy gaming load.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/laptop-cooler.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card" data-price="180">
+        <img src="image/products/SpinBot IceDot Mobile Cooler.jpg" 
+             alt="SpinBot IceDot Mobile Cooler with clip-on design" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">SpinBot IceDot Mobile Cooler</div>
+        <div class="rating">★★★★☆ (4.0)</div>
+        <div class="review">Stay Comfortable while Gaming.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/spinbot_IceDot-mobileCooler.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card" data-price="70">
+        <img src="image/products/fingersleeve.jpg" 
+             alt="Set of gaming finger sleeves for touchscreen devices" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">Gaming Sleeves</div>
+        <div class="rating">★★★★☆ (4.0)</div>
+        <div class="review">Reduces friction for smoother mobile gaming.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/gaming-sleeve.html"class="btn" >More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card" data-price="220">
+        <img src="image/products/Gadgeto Set of 5 Combo Pack.jpg" 
+             alt="Gadgeto Set of 5 gaming accessories combo pack" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">Gadgeto Set of 5 Combo Pack</div>
+        <div class="rating">★★★★☆ (3.5)</div>
+        <div class="review">Perfect for MMO and FPS games and affodable</div>
+        <div class="btn-group">
+          <a href="Product/accessories/Gadgeto_5-in-1-gamingCombo.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card" data-price="160">
+        <img src="image/products/DXP Mobile Game Combo Pack.jpg" 
+             alt="One-Handed Gaming Keypad with programmable buttons" 
+             loading="lazy"
+             width="350"
+             height="350">
+        <div class="product-name">One-Handed Gaming Keypad</div>
+        <div class="rating">★★★★☆ (4.5)</div>
+        <div class="review">Perfect for MMO and FPS games, customizable keys.</div>
+        <div class="btn-group">
+          <a href="Product/accessories/DXP_mobile-gameComboPack.html" class="btn">More Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 GearUp Tech. All rights reserved.
+  </footer>
+
+  <!-- Sorting Script -->
+  <script>
+    const priceFilter = document.getElementById('price-filter');
+    const productGrid = document.getElementById('product-grid');
+    const productCards = Array.from(productGrid.children);
+
+    priceFilter.addEventListener('change', () => {
+      const sortedCards = productCards.sort((a, b) => {
+        const priceA = parseInt(a.getAttribute('data-price'));
+        const priceB = parseInt(b.getAttribute('data-price'));
+        return priceFilter.value === 'low-high' ? priceA - priceB : priceB - priceA;
+      });
+
+      sortedCards.forEach(card => productGrid.appendChild(card));
+    });
+  </script>
+
+</body>
+</html>

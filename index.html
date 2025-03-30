@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearUp Tech | Pro Gaming Gear</title>
+    <!-- Meta Tag Optimization -->
+    <meta name="description" content="Discover top gaming accessories, setups, and mobile gaming powerhouses with GearUp Tech. Dominate your game with pro-level gear.">
+    <meta name="keywords" content="gaming gear, gaming accessories, gaming phones, pro gaming setups, gaming tips">
+    <meta property="og:title" content="GearUp Tech | Pro Gaming Gear">
+    <meta property="og:description" content="Discover top gaming accessories, setups, and mobile gaming powerhouses with GearUp Tech. Dominate your game with pro-level gear.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1604084732085-cdaba2a50c17">
+    <meta property="og:url" content="https://www.gearuptech.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GearUp Tech | Pro Gaming Gear">
+    <meta name="twitter:description" content="Discover top gaming accessories, setups, and mobile gaming powerhouses with GearUp Tech. Dominate your game with pro-level gear.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1604084732085-cdaba2a50c17">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0e0e1a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        header {
+            background: #1f1f2e;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff4081;
+        }
+
+        .menu-toggle {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 250px;
+            height: 100%;
+            background: #1f1f2e;
+            transition: right 0.3s ease;
+            padding: 2rem 1rem;
+            z-index: 999;
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu li {
+            margin: 1rem 0;
+        }
+
+        .mobile-menu a {
+            font-size: 1.2rem;
+            display: block;
+        }
+
+        .close-menu {
+            text-align: right;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #ff4081;
+        }
+
+        /* Hero Sections */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff4081;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff79b0;
+        }
+
+        /* Product Sections */
+        .section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #ff4081;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .product {
+            background: #1e1e2f;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            /* Lazy Loading */
+            loading: lazy;
+        }
+
+        /* Comparison Section */
+        .comparison-section {
+            background: #1a1a2e;
+            border-radius: 15px;
+            padding: 2rem 1rem;
+            margin: 2rem auto;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .compare-product {
+            text-align: center;
+            padding: 1rem;
+            background: #25253d;
+            border-radius: 12px;
+        }
+
+        .compare-product img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+        }
+
+        .specs-table {
+            width: 100%;
+            margin-top: 1.5rem;
+            border-collapse: collapse;
+        }
+
+        .specs-table td, .specs-table th {
+            padding: 12px;
+            border-bottom: 1px solid #33334d;
+        }
+
+        .specs-table th {
+            background: #2d2d4a;
+            color: #ff4081;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .why-choose ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .why-choose li {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f1f2e;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .specs-table {
+                overflow-x: auto;
+                display: block;
+            }
+        }
+
+        /* Sticky Buy Button */
+        .sticky-buy-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff4081;
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            z-index: 1000;
+            display: none;
+            transition: background 0.3s ease;
+        }
+
+        .sticky-buy-button:hover {
+            background-color: #ff79b0;
+        }
+    </style>
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GearUp Tech",
+      "url": "https://www.gearuptech.com",
+      "logo": "https://www.gearuptech.com/logo.png",
+      "description": "Discover top gaming accessories, setups, and mobile gaming powerhouses with GearUp Tech. Dominate your game with pro-level gear.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-1234",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">GearUp Tech</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">×</div>
+        <ul>
+            <li><a href="shop.html">Gaming Accessories</a></li>
+            <li><a href="mobile-reviews.html">Gaming Phones</a></li>
+            <li><a href="#comparison">Comparison Zone (comming soon)</a></li>
+            <li><a href="#">Pro Gaming Setups (comming soon)</a></li>
+            <li><a href="#">Gaming Tips (comming soon)</a></li>
+            <li><a href="#">Best of 2025 (comming soon)</a></li>
+            <li><a href="#">Newsletter (comming soon)</a></li>
+            <li><a href="#">FAQ (comming soon)</a></li>
+            <li><a href="#">Contact (comming soon)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gaming Gear Hero -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1604084732085-cdaba2a50c17')">
+        <h1>Dominate Your Game with Pro-Level Gear</h1>
+        <p>Discover Top Gaming Accessories, Setups, and More</p>
+        <a href="shop.html" class="btn">Shop Gaming Gear</a>
+    </section>
+
+    <!-- Gaming Accessories -->
+    <section class="section" id="gamingAccessories">
+        <h3>Featured Gaming Gear</h3>
+        <div class="products-grid">
+            <div class="product">
+                <img src="../../image/products/gaming-keyboard.jpg" alt="Mechanical Keyboard" loading="lazy">
+                <p>RGB Mechanical Keyboard</p>
+                <a href="Product/accessories/gaming-keyboard.html" class="btn">Check Price</a>
+            </div>
+            <div class="product">
+                <img src="../../image/products/boult-headphone.jpg" alt="Gaming Headset" loading="lazy">
+                <p>Wireless Gaming Headset</p>
+                <a href="Product/accessories/boult-headphone.html" class="btn">Check Price</a>
+            </div>
+            <div class="product">
+                <img src="../../image/products/zebgaming-mouse.jpg" alt="Gaming Mouse" loading="lazy">
+                <p>High-Performance Mouse</p>
+                <a href="Product/accessories/gaming-mouse.html" class="btn">Check Price</a>
+            </div>
+            <div class="product">
+                <img src="image/products/pro laptop-cooler.jpg" alt="Laptop Cooler" loading="lazy">
+                <p>Pro Laptop Cooler</p>
+                <a href="Product/accessories/pro_laprop-cooler.html" class="btn">Check Price</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="shop.html" class="btn">View All Accessories</a>
+        </div>
+    </section>
+
+    <!-- Gaming Phones Hero -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1610374274030-539f1b57cf7d')">
+        <h1>Mobile Gaming Powerhouses</h1>
+        <p>Experience Console-Quality Gaming On The Go</p>
+        <a href="mobile-reviews.html" class="btn">Explore Phones</a>
+    </section>
+
+    <!-- Gaming Phones -->
+    <section class="section" id="gamingPhones">
+        <h3>Top Gaming Phones</h3>
+        <div class="products-grid">
+            <div class="product">
+                <img src="image/products/S24_Ultra-pro.jpg" alt="Galaxy S24 Ultra" loading="lazy">
+                <p>Galaxy S24 Ultra</p>
+                <a href="Product/mobile/S24_Ultra.html" class="btn">Check Price</a>
+            </div>
+            <div class="product">
+                <img src="image/products/IQ_Neo10R-gaming-phone.jpg" alt="iQOO Neo 10R" loading="lazy">
+                <p>iQOO Neo 10R</p>
+                <a href="Product/mobile/IQ_Neo10R.html" class="btn">Check Price</a>
+            </div>
+            <div class="product">
+                <img src="image/products/Infinix-GT20Pro.jpg" alt="Infinix GT20 Pro" loading="lazy">
+                <p>Infinix GT20 Pro</p>
+                <a href="product/mobile/Infinix_GT-Pro.html" class="btn">Check Price</a>
+            </div>
+            <div class="product">
+                <img src="image/products/Apple-15(256).jpg" alt="iPhone 15" loading="lazy">
+                <p>iPhone 15</p>
+                <a href="product/mobile/Apple_15(256).html" class="btn">Check Price</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="mobile-reviews.html" class="btn">View All Phones</a>
+        </div>
+    </section>
+
+    <!-- Comparison Zone -->
+    
+            
+
+    <!-- Why Choose Us -->
+    <section class="section why-choose">
+        <h3>Why Choose GearUp Tech?</h3>
+        <p>Your Trusted Gaming Gear Resource</p>
+        <ul>
+            <li>✔️ Expert Testing & Reviews</li>
+            <li>✔️ Unbiased Recommendations</li>
+            <li>✔️ Latest Tech Insights</li>
+            <li>✔️ 24/7 Customer Support</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GearUp Tech. All rights reserved.<br>
+        Pro Gaming Gear Reviews & Recommendations</p>
+    </footer>
+
+    <!-- Sticky Buy Button -->
+    <div class="sticky-buy-button" id="stickyBuyButton">
+        <a href="shop.html">Buy Now</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+   
+    </script>
+</body>
+</html>

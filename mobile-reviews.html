@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== NEW SEO META TAGS ========== -->
+    <meta name="description" content="Compare top gaming smartphones - OnePlus 13R, Vivo V50 5G, POCO X7 Pro & more. Expert reviews, ratings and buying guides for mobile gamers.">
+    <meta name="keywords" content="gaming smartphones, best mobile for gaming, OnePlus 13R, Vivo V50 5G, POCO X7 Pro, Realme GT 6T, mobile phone reviews">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/mobile-reviews">
+    <meta property="og:title" content="Top Gaming Smartphones - Reviews & Comparisons | GearUp Tech">
+    <meta property="og:description" content="Expert reviews of best gaming phones - OnePlus, Vivo, POCO, Realme & more. Compare specs, performance and prices for mobile gamers.">
+    <meta property="og:image" content="https://www.yourwebsite.com/image/products/gaming-phones-collection.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Gaming Phones - Reviews & Comparisons">
+    <meta name="twitter:description" content="Compare top gaming smartphones - OnePlus 13R, Vivo V50 5G, POCO X7 Pro & more. Expert reviews and buying guides.">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/image/products/gaming-phones-collection.jpg">
+    
+    <!-- Preconnect for External Resources -->
+    <link rel="preconnect" href="https://www.amazon.in">
+    <!-- ========== END OF NEW ADDITIONS ========== -->
+
+    <!-- Your Existing Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Reviews - GearUp Tech</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #0d0d0d;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .back-button {
+            background-color: #00ffd5;
+            color: #000;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #00c2a8;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #00ffd5;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        select, .compare-button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #00ffd5;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #00ffd5;
+        }
+
+        .rating {
+            color: #ffcc00;
+            margin: 5px 0;
+        }
+
+        .review-snippet {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .details-button, .buy-button {
+            flex: 1;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .details-button {
+            background-color: #00ffd5;
+            color: #000;
+        }
+
+        .buy-button {
+            background-color: #ff4d4d;
+            color: #fff;
+        }
+
+        .details-button:hover {
+            background-color: #00c2a8;
+        }
+
+        .buy-button:hover {
+            background-color: #e60000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-button">Back to Home</a>
+        <h2>GearUp Tech</h2>
+    </header>
+
+    <h1>Top Mobile Gaming Phones</h1>
+
+    <div class="filters">
+        <select name="priceFilter" id="priceFilter">
+            <option value="">Sort by Price</option>
+            <option value="lowToHigh">Low to High</option>
+            <option value="highToLow">High to Low</option>
+        </select>
+
+        <button class="compare-button" onclick="window.location.href='comparison.html'">Compare Phones</button>
+    </div>
+
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="image/products/OnePlus 13R.jpg" 
+                 alt="OnePlus 13R Nebula Noir smartphone with gaming performance" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">OnePlus 13R</div>
+            <div class="rating">★★★★☆ 4.7</div>
+            <div class="review-snippet">Superb in overall.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/OnePlus -13R.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="image/products/Vivo V50 5G.jpg" 
+                 alt="Vivo V50 5G smartphone with gaming capabilities" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">Vivo V50 5G</div>
+            <div class="rating">★★★★☆ 4.6</div>
+            <div class="review-snippet">Best in all field</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/Vivo_V50_5G.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="image/products/POCO X7 Pro 5G.jpg" 
+                 alt="POCO X7 Pro 5G gaming smartphone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">POCO X7 Pro 5G</div>
+            <div class="rating">★★★★☆ 4.5</div>
+            <div class="review-snippet">Gaming beast with smooth display.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/POCO -X7 Pro -5G.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="image/products/Realme GT 6T 5G.jpg" 
+                 alt="Realme GT 6T 5G gaming phone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">Realme GT 6T 5G</div>
+            <div class="rating">★★★★☆ 4.3</div>
+            <div class="review-snippet">Optimized for Realme.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/Realme_GT_6T-5G.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="image/products/iQOO Z9s Pro 5G.jpg" 
+                 alt="iQOO Z9s Pro 5G gaming smartphone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">IQOO Z9s Pro 5G</div>
+            <div class="rating">★★★★☆ 4.4</div>
+            <div class="review-snippet">Budget gaming with decent performance.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/iQOO _Z9s _Pro _5G.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="image/products/POCO F5 5G.jpg" 
+                 alt="Poco F5 5G gaming phone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">Poco F5 5G</div>
+            <div class="rating">★★★☆☆ 4.3</div>
+            <div class="review-snippet">Better screen & battery upgrade.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/Poco_f5.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="image/products/Redmi Note 13 Pro.jpg" 
+                 alt="Redmi Note 13 Pro gaming smartphone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">Redmi Note 13 Pro</div>
+            <div class="rating">★★★★☆ 4.7</div>
+            <div class="review-snippet">Smooth gaming & powerful chipset.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/Redmi_Note _13-Pro.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <img src="image/products/OnePlus 12.jpg" 
+                 alt="OnePlus 12 flagship gaming phone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">OnePlus 12</div>
+            <div class="rating">★★★★☆ 4.4</div>
+            <div class="review-snippet">Fluid display & fast performance.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/OnePlus -12.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="image/products/IQ_Neo-9Pro.jpg" 
+                 alt="IQ Neo 9 Pro gaming smartphone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">IQ Neo 9 Pro</div>
+            <div class="rating">★★★★☆ 4.5</div>
+            <div class="review-snippet">Great value gaming flagship.</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/IQ_Neo-9Pro.html'">More Details
+                </button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src="image/products/ealme NARZO 70 Turbo 5G.jpg" 
+                 alt="Realme NARZO 70 Turbo 5G budget gaming phone" 
+                 loading="lazy"
+                 width="300"
+                 height="300">
+            <div class="product-title">Realme NARZO 70 Turbo 5G</div>
+            <div class="rating">★★★★☆ 4.2</div>
+            <div class="review-snippet">Affordable and Superb perfomance</div>
+            <div class="buttons">
+                <button class="details-button" onclick="window.location.href='Product/mobile/Realme_Narzo_70_turbo.html'">More Details</button>
+                <button class="buy-button" onclick="window.location.href='#'">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 GearUp Tech. All Rights Reserved.
+    </footer>
+
+    <!-- Sorting Script -->
+    <script>
+        document.getElementById('priceFilter').addEventListener('change', function() {
+            const grid = document.querySelector('.product-grid');
+            const cards = Array.from(grid.children);
+            
+            cards.sort((a, b) => {
+                const aRating = parseFloat(a.querySelector('.rating').textContent);
+                const bRating = parseFloat(b.querySelector('.rating').textContent);
+                
+                if (this.value === 'highToLow') {
+                    return bRating - aRating;
+                } else if (this.value === 'lowToHigh') {
+                    return aRating - bRating;
+                }
+                return 0;
+            });
+            
+            cards.forEach(card => grid.appendChild(card));
+        });
+    </script>
+
+</body>
+</html>
